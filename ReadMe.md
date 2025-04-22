@@ -32,7 +32,6 @@ This is the Phase IV implementation of the CS4400 Project. It is a full-stack Fl
 ## ⚙️ Setup Instructions
 
 ### 1. Clone or Move Project Folder
-Make sure `4400PhaseIV` is on your local machine.
 
 ### 2. Open VS Code Terminal & Set Up Virtual Environment
 ```bash
