@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>People in the Air</title>
+</head>
+<body>
+    <h1>People Currently in the Air</h1>
+
+    <table border="1">
+        <tr>
+            <th>Departing From</th>
+            <th>Arriving At</th>
+            <th>Number of Airplanes</th>
+            <th>Airplane List</th>
+            <th>Flight List</th>
+            <th>Earliest Arrival</th>
+            <th>Latest Arrival</th>
+            <th>Number of Pilots</th>
+            <th>Number of Passengers</th>
+            <th>Total</th>
+            <th>Person ID List</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row.departing_from }}</td>
+            <td>{{ row.arriving_at }}</td>
+            <td>{{ row.num_airplanes }}</td>
+            <td>{{ row.airplane_list }}</td>
+            <td>{{ row.flight_list }}</td>
+            <td>{{ row.earliest_arrival }}</td>
+            <td>{{ row.latest_arrival }}</td>
+            <td>{{ row.num_pilots }}</td>
+            <td>{{ row.num_passengers }}</td>
+            <td>{{ row.joint_pilots_passengers }}</td>
+            <td>{{ row.persons_list }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

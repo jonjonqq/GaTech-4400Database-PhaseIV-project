@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>People on the Ground</title>
+</head>
+<body>
+    <h1>People Currently on the Ground</h1>
+
+    <table border="1">
+        <tr>
+            <th>Airport ID</th>
+            <th>Airport Name</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Number of Pilots</th>
+            <th>Number of Passengers</th>
+            <th>Total</th>
+            <th>Person ID List</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row.airport }}</td>
+            <td>{{ row.airport_name }}</td>
+            <td>{{ row.city }}</td>
+            <td>{{ row.state }}</td>
+            <td>{{ row.country }}</td>
+            <td>{{ row.num_pilots }}</td>
+            <td>{{ row.num_passengers }}</td>
+            <td>{{ row.joint_pilots_passengers }}</td>
+            <td>{{ row.person_list }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

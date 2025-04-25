@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flights on the Ground</title>
+</head>
+<body>
+    <h1>Flights Currently on the Ground</h1>
+
+    <table border="1">
+        <tr>
+            <th>Departing From</th>
+            <th>Number of Flights</th>
+            <th>Flight List</th>
+            <th>Earliest Arrival</th>
+            <th>Latest Arrival</th>
+            <th>Airplane List</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row.departing_from }}</td>
+            <td>{{ row.num_flights }}</td>
+            <td>{{ row.flight_list }}</td>
+            <td>{{ row.earliest_arrival }}</td>
+            <td>{{ row.latest_arrival }}</td>
+            <td>{{ row.airplane_list }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

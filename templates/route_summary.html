@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Route Summary</title>
+</head>
+<body>
+    <h1>Route Summary</h1>
+
+    <table border="1">
+        <tr>
+            <th>Route ID</th>
+            <th>Number of Legs</th>
+            <th>Leg Sequence</th>
+            <th>Total Distance</th>
+            <th>Number of Flights</th>
+            <th>Flight List</th>
+            <th>Airport Sequence</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row.route }}</td>
+            <td>{{ row.num_legs }}</td>
+            <td>{{ row.leg_sequence }}</td>
+            <td>{{ row.route_length }}</td>
+            <td>{{ row.num_flights }}</td>
+            <td>{{ row.flight_list }}</td>
+            <td>{{ row.airport_sequence }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

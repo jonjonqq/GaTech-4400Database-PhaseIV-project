@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alternative Airports</title>
+</head>
+<body>
+    <h1>Alternative Airports by City & State</h1>
+
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Number of Airports</th>
+            <th>Airport Codes</th>
+            <th>Airport Names</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row.city }}</td>
+            <td>{{ row.state }}</td>
+            <td>{{ row.country }}</td>
+            <td>{{ row.num_airports }}</td>
+            <td>{{ row.airport_code_list }}</td>
+            <td>{{ row.airport_names_list }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
