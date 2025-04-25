@@ -8,6 +8,7 @@
 
     <table border="1">
         <tr>
+            <th>Departing From</th>
             <th>Airport ID</th>
             <th>Airport Name</th>
             <th>City</th>
@@ -20,6 +21,7 @@
         </tr>
         {% for row in results %}
         <tr>
+            <td>{{ row.departing_from }}</td>
             <td>{{ row.airport }}</td>
             <td>{{ row.airport_name }}</td>
             <td>{{ row.city }}</td>
